@@ -1,0 +1,10 @@
+{
+    "name": "innologica-region-editor",
+    "description": "A jQuery plug-in for drawing regions on a google map",
+    "version": "0.9.0",
+    "authors": "Nikolay Traykov <ntraykov@innologica.com>",
+    "dependencies": {
+        "jquery": ">=1.11.1",
+        "bootstrap": ">=2.0.0 <3.0"
+    }
+}

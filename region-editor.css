@@ -1,0 +1,37 @@
+
+/* Vertical positioning of the modal dialog */
+.modal.fade.in {
+    top: 25%;
+}
+ 
+/* ContextMenu styles */
+.context_menu {
+    background-color: white;
+    border: 1px solid gray;
+    z-index: 100;
+}
+.context_menu_item {
+    padding: 3px 6px;
+}
+.context_menu_item:hover{
+    background-color: #CCCCCC;
+}
+.context_menu_separator {
+    background-color: gray;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Positioning of the bottom menu */
+div[id^=edit-polygon-menu] {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    background-color: white;
+    border: 1px solid #717171;
+    width: 20%;
+    padding: 0.7%;
+    opacity: 0.8;
+    display: none;
+}
