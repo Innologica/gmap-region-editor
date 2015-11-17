@@ -24,7 +24,7 @@ Add google DOM listener to be sure that your code will be invoked after google m
 
     google.maps.event.addDomListener(window, 'load', callback);
 
-Then initialize the plugin by passing it options for the google maps:
+Then initialize the plugin by passing it options for the Google map:
 
     $('.map').regionEditor({
         mapOptions: {
@@ -74,7 +74,11 @@ Full example:
 
 ## Options
 
-### ```regionsListUrl```
+#### `mapOptions`
+
+The Google map's [options] (https://developers.google.com/maps/documentation/javascript/reference?hl=en#MapOptions)
+
+#### ```regionsListUrl```
 
 The URL where the list of existing regions is fetched from. Default value: 
 
@@ -90,7 +94,7 @@ Sample result:
         ]
     }
 
-### ```regionModifyUrl```
+#### ```regionModifyUrl```
 
 The URL used for creating or updating a region. Default value: 
 
@@ -109,7 +113,7 @@ Sample result:
         success: 1
     }
     
-### ```regionDeleteUrl```
+#### ```regionDeleteUrl```
 
 The URL used for deleting a region. Default value: 
 
@@ -121,7 +125,7 @@ Sample result:
         success: 1
     }
         
-### ```regionGetUrl```
+#### ```regionGetUrl```
 
 The URL used for getting a single region. Default value: 
 
@@ -134,7 +138,7 @@ Sample result:
         region: {id: "1", name: "Studentski Grad", color: "#ff0000", coordinates: "[{"lat":42.71299792159186,"lng":23.237500190734863},{"lat":42.71006532890601,"lng":23.240461349487305}...]"}
     }
     
-### ```regionUpdateCoordUrl```
+#### ```regionUpdateCoordUrl```
 
 The URL used for updating the coordinates of a region. Default value: 
 
