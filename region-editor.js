@@ -1,29 +1,7 @@
 (function($) {
         
     $.fn.regionEditor = function(options) {
-        var map,
-            drawingManager,
-            mapContextMenu,
-            polygonContextMenu,
-            selectedPolygon, // The polygon that the user selected for editing meta-data
-            modal,
-            modalTitle,
-            modalBody,
-            editPolygonMenu,
-            escButtonPushed,
-            menuSelected,
-            defaultPolygonOptions = {
-                fillColor: '#ff0000',
-                fillOpacity: 0.35,
-                strokeWeight: 2,
-                clickable: true,
-                editable: false,
-            };
-            
-        this.getMap = function() {
-            return map;
-        };
-
+        
         return this.each(function(index, element) {
             var settings = $.extend({
                 regionsListUrl: '/administration/regioneditor/list',
@@ -32,6 +10,25 @@
                 regionGetUrl: '/administration/regioneditor/get/id',
                 regionUpdateCoordUrl: '/administration/regioneditor/updateCoordinates/id'
             }, options);
+
+            var map,
+                drawingManager,
+                mapContextMenu,
+                polygonContextMenu,
+                selectedPolygon, // The polygon that the user selected for editing meta-data
+                modal,
+                modalTitle,
+                modalBody,
+                editPolygonMenu,
+                escButtonPushed,
+                menuSelected,
+                defaultPolygonOptions = {
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.35,
+                    strokeWeight: 2,
+                    clickable: true,
+                    editable: false,
+                };
 
             function initialize() {
                 if (!checkOptions()) {

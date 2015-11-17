@@ -150,12 +150,6 @@ Sample result:
         success: 1
     }
 
-## Methods
-
-#### ```getMap()```
-
-Returns the google.maps.Map object.
-
 ## Author
 
 **Nikolay Traykov (<ntraykov@innologica.com>)**
